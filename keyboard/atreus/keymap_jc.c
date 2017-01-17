@@ -3,14 +3,6 @@
 /*
 This layout was created by Jean-Christophe Petkovich, and inspired by the layout
 created by Jeremy Cowgar (@jcowgar).
-
-The 5 layers can be viewed graphically:
-
-1. Letters - http://www.keyboard-layout-editor.com/#/gists/cbed8979bba2df4419c738903a623546
-2. Symbols - http://www.keyboard-layout-editor.com/#/gists/8956a18b508a78e93b9c38ec3fcccaa5
-3. Navigation - http://www.keyboard-layout-editor.com/#/gists/6ed492b714a7f54eb1c5de09b87fd8c4
-4. Numbers - http://www.keyboard-layout-editor.com/#/gists/399ceb5624e8388e48a3a5eacac8e973
-5. Function Keys - http://www.keyboard-layout-editor.com/#/gists/7fd7dc24c7048316f3724b1893c64e89
 */
 
 // Reduce the time to decision of a tap or hold
@@ -98,12 +90,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   {KC_Q,    KC_W,    KC_F,    KC_P,    KC_G,    _______, KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN},
   {KC_A,    KC_R,    KC_S,    KC_T,    KC_D,    _______, KC_H,    KC_N,    KC_E,    KC_I,    KC_O},
   {FN_ZSFT, FN_NUMS, FN_FKEY, KC_V,    KC_B,    FN_CMDL, KC_K,    KC_M,    FN_CURS, FN_SYMB, FN_SSFT},
-  {KC_ESC,  KC_LCBR, KC_RCBR, FN_ALTB, KC_SPC,  KC_ENT,  KC_BSPC, FN_CTES, KC_MINS, KC_QUOT, KC_ENT}
+  {KC_ESC,  KC_LCBR, KC_RCBR, FN_ALTB, KC_SPC,  FN_SYMB, KC_BSPC, FN_CTES, KC_MINS, KC_QUOT, KC_ENT}
 },
 [NUMS] = {
   {_______, _______, _______, KC_ASTR, KC_SLSH, _______, _______, KC_7,    KC_8,    KC_9,    KC_SLSH},
   {_______, _______, KC_EQL,  KC_PLUS, KC_MINS, _______, KC_LPRN, KC_4,    KC_5,    KC_6,    KC_ASTR},
-  {_______, _______, KC_DOT,  KC_COMM, KC_SCLN, _______, KC_RPRN, KC_1,    KC_2,    KC_3,    KC_MINS},
+  {_______, _______, KC_DOT,  KC_COMM, KC_SCLN, _______, C_RPRN,  KC_1,    KC_2,    KC_3,    KC_MINS},
   {_______, _______, _______, _______, _______, _______, _______, KC_0,    KC_DOT,  KC_EQL,  KC_PLUS}
 },
 [FKEY] = {
@@ -120,8 +112,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 },
 [SYMB] = {
   {KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, _______, KC_CIRC, KC_AMPR, KC_ASTR, _______, _______},
-  {KC_LBRC, KC_RBRC, KC_LCBR, KC_RCBR, KC_PIPE, _______, KC_COMM, _______, _______, _______, _______},
-  {_______, KC_LPRN, KC_RPRN, KC_GRV,  KC_TILD, _______, _______, KC_LABK, KC_RABK, _______, KC_BSLS},
+  {KC_TILD, KC_LBRC, KC_RBRC, KC_LCBR, KC_RCBR, _______, _______, _______, _______, _______, _______},
+  {KC_GRV,  KC_LPRN, KC_RPRN, _______,  KC_PIPE, _______, _______, KC_LABK, KC_RABK, _______, KC_BSLS},
   {_______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______}
 }};
 
