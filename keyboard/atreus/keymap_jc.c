@@ -61,6 +61,7 @@ created by Jeremy Cowgar (@jcowgar).
 #define KM_LFWD ACTION_MODS_KEY(MOD_LCTL, KC_LEFT)
 #define KM_RIWD ACTION_MODS_KEY(MOD_LCTL, KC_RGHT)
 #define KM_DSPC ACTION_MODS_KEY(MOD_LALT, KC_BSLS) // delete whitespace
+#define KM_ALTB ACTION_MODS_KEY(MOD_LALT, KC_TAB) // alttab
 
 // Helpers for my symbol layer
 #define KC_EXLM ACTION_MODS_KEY(MOD_LSFT, KC_1)
@@ -113,7 +114,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [SYMB] = {
   {KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, _______, KC_CIRC, KC_AMPR, KC_ASTR, _______, _______},
   {KC_TILD, KC_LBRC, KC_RBRC, KC_LCBR, KC_RCBR, _______, _______, _______, _______, _______, _______},
-  {KC_GRV,  KC_LPRN, KC_RPRN, _______,  KC_PIPE, _______, _______, KC_LABK, KC_RABK, _______, KC_BSLS},
+  {KC_GRV,  KC_LPRN, KC_RPRN, _______, KC_PIPE, _______, _______, KC_LABK, KC_RABK, _______, KC_BSLS},
   {_______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______}
 }};
 
